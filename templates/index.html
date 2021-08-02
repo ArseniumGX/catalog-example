@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Página de Testes</title>
+        <link rel="stylesheet" href="../static/css/index.css">
+    </head>
+    <body>
+        <header>
+            <h1>Catálogo Teste</h1>
+            <h2>CRUD Completo | Retrieve</h2>
+        </header>
+        <section>
+            <a href="/adicionar">
+                <button>Adicionar</button>
+            </a>
+        </section>
+        <main>
+            {% for info in infos %}
+            <div class="card">
+                <img src="../static/img/img-lerem.png" alt="image">
+                <div class="info">
+                    <p>{{info.nome}}</p>
+                    <p>R$ {{info.valor}}</p>
+                    <p>Qtd. {{info.quantidade}}</p>
+                </div>
+                <div class="tbns">
+                    <a href="/alterar/{{info.id}}"><button>alterar</button></a>
+                    <a href="/deletar/{{info.id}}"><button>deletar</button></a>
+                </div>
+            </div>
+            {% endfor %}
+        </main>
+        <footer>
+            <div class="socials">
+                <a href=""></a>
+                <a href=""></a>
+                <a href=""></a>
+            </div>
+            <a href="#"><img src="../static/img/marca.svg" alt="ArseniumGX Marca"></a>
+            <p>Criado por José Pereira Macedo &copy; 2021</p>
+        </footer>
+
+        <script src="../static/js/modal.js"></script>
+    </body>
+</html>
