@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    background-color: #252422;
+    color: #fffcf2;
+    padding: 2rem;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+section a button{
+    background-color: #8A1C7C;
+    color: #fffcf2;
+    width: 5rem;
+    height: 1.8rem;
+    border: none;
+    border-radius: 8px;
+    transition: .3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+section a button:hover{
+    background-color: #1f0322;
+    box-shadow: 0 0 .4rem #8A1C7C;
+}
+
+main{
+    max-width: 900px;
+    height: 100vh;
+    margin: 2rem auto;
+    border: 1px solid #00000090;
+    border-radius: 8px;
+    padding: 1rem;
+    scroll-behavior: smooth;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    /* justify-content: space-evenly; */
+    overflow: scroll;
+    scroll-snap-type: proximity;
+}
+
+main div.card{
+    border: .1rem solid #000000;
+    width: 12rem;
+    height: 16rem;
+    border-radius: 8px;
+    padding: 2rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transition: .3s ease;
+}
+
+main div.card:hover{
+    box-shadow: 0 0 .1rem #000;
+    transform: scale(1.2);
+}
+
+main div.card img{
+    height: 8rem;
+}
+
+main div.card div.info p{
+    margin: 1rem;
+    text-align: center;
+}
+
+main div.card div.btns{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    background-color: #252422;
+    color: #fffcf2;
+    padding: 2rem;
+}
+
+footer img{
+    width: 12rem;
+}
